@@ -140,7 +140,7 @@ const commands = {
   setTimeout(() => {
     window.location.href = "https://old-website.haktanefe.com";
   }, 200);
-}
+},
 	rodevs: () => {
 	addLine("Redirecting you to rodevs portfolio...")
   setTimeout(() => {
@@ -187,6 +187,7 @@ input.addEventListener("keydown", (e) => {
     terminal.scrollTop = terminal.scrollHeight;
   }
 });
+
 
 
 
