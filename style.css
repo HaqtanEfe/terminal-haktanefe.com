@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #00ff7f;
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal {
+  background-color: #0d0d0d;
+  border: 2px solid #00ff7f;
+  border-radius: 8px;
+  width: 95%;
+  height: 90%;
+  max-width: 1200px;
+  box-shadow: 0 0 20px #00ff7f;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #111;
+  padding: 5px 10px;
+  border-bottom: 2px solid #00ff7f;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.btn.minimize { background: #00ff7f; }
+.btn.maximize { background: #ffd700; }
+.btn.close { background: #ff3b3b; }
+
+.terminal-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.line {
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  margin-bottom: 5px;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* spacing between prompt and input */
+}
+
+.input-line input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #00ff7f;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #00ff7f;
+  margin-left: 2px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.1%, 100% { opacity: 0; }
+}
+
+.profile-pic {
+  margin-top: 10px;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 2px solid #00ff7f;
+  box-shadow: 0 0 15px #00ff7f;
+}
+
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  color: #00ff7f;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  flex-direction: column;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #00ff7f;
+  margin-left: 2px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.1%, 100% { opacity: 0; }
+}
+

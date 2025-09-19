@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HaqtanEfe | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loading-line">Initializing portfolio<span class="cursor">|</span></div>
+  </div>
+  
+  <div class="terminal" style="display: none;">
+    <div class="terminal-header">
+      <div class="buttons">
+        <div class="btn minimize"></div>
+        <div class="btn maximize"></div>
+        <div class="btn close"></div>
+      </div>
+    </div>
+    <div class="terminal-body" id="terminal">
+      <div class="line"><span class="prompt">HaqtanEfe@portfolio:~$ </span>Type "help" for commands.</div>
+      <div class="line input-line">
+        <span class="prompt">HaqtanEfe@portfolio:~$ </span>
+        <input type="text" id="commandInput" autofocus autocomplete="off" placeholder="Type a command..." />
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
