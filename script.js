@@ -131,17 +131,22 @@ const commands = {
     contactText.split("\n").forEach(line => addLine(line));
   },
   help: () => {
-  const commandList = Object.keys(commands).sort(); // alphabetical order
+  const commandList = Object.keys(commands).sort();
   addLine("Available commands: " + commandList.join(", "));
 	},
 	
 	old: () => {
-  addLine("Redirecting you to the old website..."); // optional message
+  addLine("Redirecting you to the old website...");
   setTimeout(() => {
     window.location.href = "https://old-website.haktanefe.com";
-  }, 200); // small delay to show the message before redirect
+  }, 200);
 }
-
+	rodevs: () => {
+	addLine("Redirecting you to rodevs portfolio...")
+  setTimeout(() => {
+    window.location.href = "https://rodevs.com/portfolios/878362276334272523";
+  }, 200);
+}
 };
 
 // function to append output lines
@@ -182,6 +187,7 @@ input.addEventListener("keydown", (e) => {
     terminal.scrollTop = terminal.scrollHeight;
   }
 });
+
 
 
 
